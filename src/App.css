@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+/* fonts 
+  concert one,
+  header, luckiest guy,
+  p, changa
+*/
+
+@font-face {
+  font-family: 'Adobe Clean Regular';
+  src: url('AdobeClean-Regular.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sidebar {
   margin: 3rem 0 5rem 0;
   display: flex;
@@ -69,18 +83,37 @@ div.home-sidebar-icons {
 .home {
   display: flex; 
   flex-direction: row;
-  margin: 2.5rem 3.5rem;
+  justify-content: space-between;
+  margin: 3.5rem 4.5rem;
 }
 .home-icon {
   width: 75px;
   height: 75px;
 }
-.hi-adobe {
+.adobe-opener {
   display: flex; 
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
+}
+.hi-adobe {
+  font-weight: 500;
+  font-size: 50px;
+  font-family: 'Luckiest Guy';
+  color: #600000
+}
+.aleem-text {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0 3rem;
+  font-family: 'Adobe Clean Regular';
+  font-size: 35px;
+  font-weight: 700;
+}
+.new-line {
+  display: flex;
+  flex-direction: column;
+  margin: -3.5rem 1.5rem;
 }
 
 
@@ -91,4 +124,28 @@ div.home-sidebar-icons {
    .main-sidebar-container {
       display: none;
    }
+   .home {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3.5rem 4.5rem;
+  }
+  .home-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .adobe-opener {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+  }
+  .hi-adobe {
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Luckiest Guy';
+    color: #600000
+  }
+  .aleem-text {
+    display: none;
+  }
 }
