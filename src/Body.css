@@ -1,0 +1,6 @@
+.body-container {
+  display: flex;
+  flex-direction: row;
+  margin: -4rem 4.5rem;
+  justify-content: space-evenly;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, } from "react";
 import aleem from "../images/aleem.png";
 import "../App.css";
+import Body from "./Body";
 
 const Home = () => {
 
@@ -27,7 +28,7 @@ const Home = () => {
       <div className="adobe-opener">
         <h1 className="hi-adobe">Hey Adobe,</h1>
         <p className="aleem-text">
-          my name is Aleem Pathamamvong a Full-Stack 
+          my name is Aleem Pathamamvong and I am a Full-Stack 
         </p>
       </div>
         <a href="https://adobe.com">
@@ -39,11 +40,33 @@ const Home = () => {
     </div>
     <div className="new-line">
       { size <= 600 ? <><p>I'm Aleem Pathammavong</p> <img src={aleem} /></> : 
-      <p className="aleem-text">
-        Web-developer
-      </p>
+      <>
+        <div className="text-container">
+          <div className="aleem-text-container">
+            <p className="aleem-text">
+              Web-developer who is interested in the 
+            </p>
+          </div>
+          <div className="position-name-container">
+            <h2 className="position-name">UI Software Engineer Intern</h2>
+          </div>
+        </div>
+      </>
       }
     </div>
+    <div className="new-line2">
+      <div className="text-container">
+        <div className="position-name-container">
+          <h2 className="position-name">Position,</h2>
+        </div>
+        <div className="position-text-container">
+          <p className="aleem-text">
+            that you guys have open.
+          </p>
+        </div>
+      </div>
+    </div>
+    <Body />
     </>
   );
 };
